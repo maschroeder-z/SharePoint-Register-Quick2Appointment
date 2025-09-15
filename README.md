@@ -1,14 +1,17 @@
-# fast-register-to-appointment
-
+# SharePoint - Fast Register to Appointment (Application Customizer)
 ## Summary
+SharePoint Online provides a list of appointments (events) on a site. The "Events" web part can be used to display them on a page. Users can access the appointment details via the web part and view all the details. The detailed view provides a link that allows them to add the appointment to their personal calendar. An appointment entry also allows them to maintain an attendee list. The "Events" list provides the "Attendees" column, where multiple people can be added. However, there is no automatic function for this; the list must be edited manually.
+The special app extension adds a registration and deregistration function to the detailed view. Users can register for a specific appointment and deregister later with a simple click. Attendees are automatically managed in the attendee column of the list.
 
-Short summary on functionality and used technologies.
+![The extended calendar entry](https://www.dev-sky.net/img/apps/fastregisterappointment.png)
 
-[picture of the solution in action, if possible]
+*UI of extended event calendar*
+
+## Video
+[![SharePoint Online: Schnelle & einfache Terminanmeldung](https://img.youtube.com/vi/_-aTpJPXRdA/hqdefault.jpg)](https://youtu.be/_-aTpJPXRdA)
 
 ## Used SharePoint Framework Version
-
-![version](https://img.shields.io/badge/version-1.17.4-green.svg)
+![version](https://img.shields.io/badge/version-1.18-green.svg)
 
 ## Applies to
 
@@ -19,20 +22,20 @@ Short summary on functionality and used technologies.
 
 ## Prerequisites
 
-> Any special pre-requisites?
+> You just need a SharePoint list and a view for field order configuration.
 
 ## Solution
 
-| Solution    | Author(s)                                               |
-| ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
+| Solution    | Author(s)                                                   |
+| ----------- | ----------------------------------------------------------- |
+| Repository  | Marc André Schröder-Zhou (https://github.com/maschroeder-z) |
 
 ## Version history
 
-| Version | Date             | Comments        |
-| ------- | ---------------- | --------------- |
-| 1.1     | March 10, 2021   | Update comment  |
-| 1.0     | January 29, 2021 | Initial release |
+| Version | Date             | Comments              |
+| ------- | ---------------- | --------------------- |
+| 1.1     | 30.11.2024       | Upgrade to SPFx 1.18  |
+| 1.0     | 30.09.2023       | Initial Release       |
 
 ## Disclaimer
 
@@ -48,21 +51,16 @@ Short summary on functionality and used technologies.
   - **npm install**
   - **gulp serve**
 
-> Include any additional steps as needed.
+> Check your currenr Node version and installed SPFx-Framework version.
 
 ## Features
+- A "Register" button is added for users who are not registered.
+- Clicking "Register" saves the current user to the Participants column.
+- A notification appears for users who are already registered to the event. A "Cancel" button is added.
+- Clicking "Cancel" removes the current user from the Participants column.
 
-Description of the extension that expands upon high-level summary above.
-
-This extension illustrates the following concepts:
-
-- topic 1
-- topic 2
-- topic 3
-
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
-
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
+## Help
+Please contact me for further help or information about the sample.
 
 ## References
 
